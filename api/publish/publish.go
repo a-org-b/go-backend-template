@@ -19,7 +19,7 @@ func publish(c *gin.Context) {
 	var body PublishRequest
 	err := c.BindJSON(&body)
 	if err != nil {
-		httpo.NewErrorResponse(http.StatusBadRequest, "failed to validate body").
+		httpo.NewErrorResponse(http.StatusBadRequest, err.Error()).
 			Send(c, http.StatusBadRequest)
 		return
 	}
