@@ -1,4 +1,4 @@
-package sitemodelmethods
+package site_model_methods
 
 import (
 	"template-app/models/sitemodel"
