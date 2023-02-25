@@ -8,9 +8,11 @@ require (
 	github.com/caarlos0/env/v6 v6.10.1
 	github.com/gin-contrib/cors v1.4.0
 	github.com/gin-gonic/gin v1.9.0
+	github.com/go-resty/resty/v2 v2.7.0
 	github.com/joho/godotenv v1.5.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/stretchr/testify v1.8.1
+	github.com/vk-rv/pvx v0.0.0-20210912195928-ac00bc32f6e7
 	gorm.io/driver/postgres v1.4.8
 	gorm.io/gorm v1.24.5
 )

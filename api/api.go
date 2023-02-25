@@ -2,6 +2,7 @@
 package api
 
 import (
+	"template-app/api/auth"
 	"template-app/api/publish"
 
 	"github.com/gin-gonic/gin"
@@ -11,6 +12,7 @@ import (
 func ApplyRoutes(r *gin.Engine) {
 	api := r.Group("/api")
 	{
+		auth.ApplyRoutes(api)
 		publish.ApplyRoutes(api)
 	}
 }
